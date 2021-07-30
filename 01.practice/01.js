@@ -3,9 +3,14 @@ function auto(inter) {
     inter %= 4;
     $(".swiper-container").css("transform","translateY("+ (-240 * inter)+"px)");
     if(inter == 3){
-        $(".swiper-container").toggleClass("no-transition");
-        $(".no-transition").css("transform","translateY(0px)");
-        $(".no-transition").toggleClass("swiper-container");
+        var timeout = setTimeout(()=>{
+            $(".swiper-container").addClass("no-transition");
+            $(".no-transition").css("transform","translateY(0px)");
+            $(".swiper-container").removeClass("no-transition");
+            alert("延时");
+            inter = 0;
+        },300);
+        clearTimeout(timeout);
         inter = 0;
     }
 
