@@ -1,13 +1,13 @@
 function auto(inter) {
     inter ++;
-    inter %= 4;
+    inter %= 3;
     $(".swiper-container").css("transform","translateY("+ (-240 * inter)+"px)");
-    if(inter == 3){
-        $(".swiper-container").toggleClass("no-transition");
-        $(".no-transition").css("transform","translateY(0px)");
-        $(".no-transition").toggleClass("swiper-container");
-        inter = 0;
-    }
+    // if(inter == 3){
+    //     $(".swiper-container").toggleClass("no-transition");
+    //     $(".no-transition").css("transform","translateY(0px)");
+    //     $(".no-transition").toggleClass("swiper-container");
+    //     inter = 0;
+    // }
     $(".pagination .swiper-pagination-switch").removeClass("swiper-visible-switch");
     $(".swiper-pagination-switch").eq(inter).addClass("swiper-visible-switch");
     return inter;
