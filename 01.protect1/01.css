@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.notice_shop{
+    height: 290px;
+    width: 244px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.notice_shop_img{
+    height: 50px;
+    background-image: url(bj3.png);
+    background-position: center;
+    background-repeat: no-repeat; 
+    text-align: center;
+}
+
+.notice{
+    line-height: 50px;
+}
+
+.notice::before{
+    content: "\264B";
+}
+
+.notice_shop_roll{
+    height: 240px;
+    width: 244px;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-container{
+    position:absolute;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+}
+.no-transition{
+    position:absolute;
+}
+
+.swiper-slide{
+    padding: 20px 7px;
+}
+
+.notice_shop_roll ul li div{
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 700;
+}
+.notice_shop_roll ul li div::before{
+    content: "\2022";
+    position: absolute;
+    left: -7px;
+}
+
+
+.notice_shop_roll ul li{
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    position: relative;
+}
+
+
+.notice_shop_roll ul li a{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #666666;
+    margin-top: 6px;
+    cursor: pointer;
+    display: block;
+    width: 228px;
+    text-decoration:none;
+}
+
+.notice_shop_roll ul li a:hover{
+    color: rgb(0, 183, 255);
+}
+
+.pagination{
+    position: absolute;
+    top: 50%;
+    right:-5px
+}
+.swiper-pagination-switch{
+    background-color: #d8d8d8;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    display: block;
+    cursor: pointer;
+    margin: 5px 5px;
+}
+
+.swiper-visible-switch{
+    background-color: #1790FF;
+}
+.swiper-active-switch{
+    background:#FFF
+}
