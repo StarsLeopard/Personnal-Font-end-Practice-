@@ -8,7 +8,6 @@ function auto(inter) {
         $(".no-transition").toggleClass("swiper-container");
         inter = 0;
     }
-    //随便写点东西就好
 
     $(".pagination .swiper-pagination-switch").removeClass("swiper-visible-switch");
     $(".swiper-pagination-switch").eq(inter).addClass("swiper-visible-switch");
