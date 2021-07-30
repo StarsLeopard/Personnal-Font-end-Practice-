@@ -9,6 +9,7 @@ function auto(inter) {
         inter = 0;
     }
     //随便写点东西就好
+
     $(".pagination .swiper-pagination-switch").removeClass("swiper-visible-switch");
     $(".swiper-pagination-switch").eq(inter).addClass("swiper-visible-switch");
     return inter;
